@@ -243,6 +243,11 @@ npm run dev
 - One-click import at Vercel and select the `web` directory as the root, or
 - GitHub Pages via a static export: `next build && next export` (ensure `output: 'export'`), then publish `web/out`.
 
+### Deploy on Cloudflare Pages
+- The repo includes a `wrangler.toml` that runs the build from `web/`.
+- Set build command to `npx @cloudflare/next-on-pages@1` or simply leave default (the file handles `cd web`).
+- Output directory: `web/.vercel/output/static` (as referenced in `wrangler.toml`).
+
 ### Deploy to GitHub Pages
 1. Commit & push to `main` (already set up for this repo).
 2. In GitHub → Settings → Pages:

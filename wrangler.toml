@@ -1,0 +1,8 @@
+# Cloudflare Pages configuration for building the Next.js app in `web/`
+# This ensures the build command runs where `next` is installed.
+
+[pages]
+build_command = "cd web && npx @cloudflare/next-on-pages@1"
+build_output_dir = "web/.vercel/output/static"
+
+
