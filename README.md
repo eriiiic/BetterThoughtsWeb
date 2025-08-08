@@ -190,15 +190,28 @@ The loader falls back to `Mindpace/Resources/ThoughtReframingCategories.json` an
 
 ## Website (BetterThoughtsWeb)
 
-This repository also contains a lightweight, single-page marketing website for the BetterThoughts iOS app.
+This repository contains both a lightweight static site and a Next.js app for the BetterThoughts iOS app.
 
-### Files
+### Static site files
 ```
 BetterThoughtsWeb/
   index.html           # One-page site: hero, features, privacy, terms, contact
   styles.css           # Modern, glassy style with gradients & subtle animation
   assets/
     logo.svg           # App logo placeholder; replace with your final asset if needed
+```
+
+### Next.js app (App Router + Tailwind)
+```
+BetterThoughtsWeb/web/
+  package.json
+  next.config.ts
+  src/app/
+    layout.tsx         # Metadata and global layout
+    page.tsx           # Landing page (hero, features, privacy, terms, contact)
+    globals.css        # Tailwind + theme base
+  public/
+    logo.svg           # Public logo used on the Next.js site
 ```
 
 ### Features on the page
@@ -209,7 +222,7 @@ BetterThoughtsWeb/
 - Large-type hero with gradient headline and animated background orbs
 - Interactive feature cards with subtle tilt and shadow
 
-### Local preview
+### Local preview (static site)
 You can open `index.html` directly in a browser, or serve it locally:
 
 ```bash
@@ -217,6 +230,18 @@ cd /Users/eric/BetterThoughts/BetterThoughtsWeb
 python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
+
+### Run the Next.js app locally
+```bash
+cd /Users/eric/BetterThoughts/BetterThoughtsWeb/web
+npm install
+npm run dev
+# then visit http://localhost:3000
+```
+
+### Deploy the Next.js app (Vercel recommended)
+- One-click import at Vercel and select the `web` directory as the root, or
+- GitHub Pages via a static export: `next build && next export` (ensure `output: 'export'`), then publish `web/out`.
 
 ### Deploy to GitHub Pages
 1. Commit & push to `main` (already set up for this repo).
