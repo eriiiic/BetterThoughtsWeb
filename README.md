@@ -206,6 +206,8 @@ BetterThoughtsWeb/
 - Privacy Policy section
 - Terms & Conditions section
 - Contact: `contact@betterthoughts.app`
+- Large-type hero with gradient headline and animated background orbs
+- Interactive feature cards with subtle tilt and shadow
 
 ### Local preview
 You can open `index.html` directly in a browser, or serve it locally:
