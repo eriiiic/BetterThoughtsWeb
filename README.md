@@ -185,3 +185,48 @@ The loader falls back to `Mindpace/Resources/ThoughtReframingCategories.json` an
 - Large media assets (audio/images) are included for in-app experiences.
 - Consider using an `.xcworkspace` if adding Swift Packages or multiple projects.
 
+
+---
+
+## Website (BetterThoughtsWeb)
+
+This repository also contains a lightweight, single-page marketing website for the BetterThoughts iOS app.
+
+### Files
+```
+BetterThoughtsWeb/
+  index.html           # One-page site: hero, features, privacy, terms, contact
+  styles.css           # Modern, glassy style with gradients & subtle animation
+  assets/
+    logo.svg           # App logo placeholder; replace with your final asset if needed
+```
+
+### Features on the page
+- Key app features overview
+- Privacy Policy section
+- Terms & Conditions section
+- Contact: `contact@betterthoughts.app`
+
+### Local preview
+You can open `index.html` directly in a browser, or serve it locally:
+
+```bash
+cd /Users/eric/BetterThoughts/BetterThoughtsWeb
+python3 -m http.server 8000
+# then visit http://localhost:8000
+```
+
+### Deploy to GitHub Pages
+1. Commit & push to `main` (already set up for this repo).
+2. In GitHub → Settings → Pages:
+   - Source: Deploy from branch
+   - Branch: `main` / root
+3. Wait for Pages to publish, then your site will be available at the project’s Pages URL.
+
+If you want a custom domain (e.g., `betterthoughts.app` or a subdomain):
+1. Configure DNS to point at GitHub Pages.
+2. Add the custom domain in GitHub Pages settings.
+
+### Logo
+The site currently uses `assets/logo.svg`. Replace this with your app logo (e.g., `logo.png`) and update references in `index.html` if desired.
+

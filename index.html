@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BetterThoughts – Thought Reframing App</title>
+    <meta name="description" content="BetterThoughts is a SwiftUI app that helps you reframe thoughts with curated quotes, category filters, bookmarks, offline support, and a home screen widget." />
+
+    <meta property="og:title" content="BetterThoughts – Thought Reframing App" />
+    <meta property="og:description" content="Reframe thoughts with curated quotes. Bookmarks, filters, offline support, and a widget. No login required." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eriiiic.github.io/BetterThoughtsWeb/" />
+
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#home">
+          <img src="assets/logo.svg" alt="BetterThoughts logo" width="32" height="32" />
+          <span>BetterThoughts</span>
+        </a>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#terms">Terms</a>
+          <a href="#contact" class="cta-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home" class="hero">
+      <div class="hero-inner card glass">
+        <img class="hero-logo" src="assets/logo.svg" alt="BetterThoughts app logo" />
+        <h1>Reframe your thoughts. Feel better.</h1>
+        <p class="subtitle">A modern iPhone app inspired by CBT that helps you reframe thoughts with curated quotes, category filters, bookmarks, and a beautiful widget. Works offline. No login required.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#features">Explore features</a>
+          <a class="button" href="#privacy">Privacy</a>
+        </div>
+        <p class="note">Coming soon to the App Store.</p>
+      </div>
+    </main>
+
+    <section id="features" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">Key features</h2>
+        <div class="feature-grid">
+          <article class="feature card">
+            <h3>Thought Reframing</h3>
+            <p>Card-based interface with curated quotes to gently shift perspective.</p>
+          </article>
+          <article class="feature card">
+            <h3>Category Filters</h3>
+            <p>Choose categories that matter to you. First launch guides you to set them up.</p>
+          </article>
+          <article class="feature card">
+            <h3>Bookmarks</h3>
+            <p>Favorite quotes and quickly revisit them. Manage them from a dedicated view.</p>
+          </article>
+          <article class="feature card">
+            <h3>Offline Support</h3>
+            <p>All data is stored locally on your device using Core Data. No account required.</p>
+          </article>
+          <article class="feature card">
+            <h3>Home Screen Widget</h3>
+            <p>See rotating quotes on your Home Screen. Supports small and medium sizes.</p>
+          </article>
+          <article class="feature card">
+            <h3>Respectful Analytics</h3>
+            <p>Anonymous usage metrics help improve the app. No personal data is collected.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="section alt">
+      <div class="section-inner narrow">
+        <h2 class="section-title">Privacy Policy</h2>
+        <p>Effective date: <strong>2025-01-01</strong></p>
+        <p>
+          BetterThoughts respects your privacy. We do not require an account and we do not
+          collect personal information. The app stores content and preferences locally on your
+          device using Apple’s Core Data.
+        </p>
+        <ul>
+          <li><strong>Local storage only</strong>: Quotes, categories, bookmarks, and dismissed cards are saved on-device.</li>
+          <li><strong>No login</strong>: The app works entirely without creating an account.</li>
+          <li><strong>Analytics</strong>: We use Firebase Analytics to collect anonymous, aggregated usage metrics (e.g., screen opens, feature usage) to improve the experience. No personally identifiable information is collected.</li>
+          <li><strong>Data sharing</strong>: We do not sell or share personal data.</li>
+          <li><strong>Contact</strong>: Email <a href="mailto:contact@betterthoughts.app">contact@betterthoughts.app</a> for privacy questions or requests.</li>
+        </ul>
+        <p>
+          If you uninstall the app, locally stored data is removed from your device.
+        </p>
+      </div>
+    </section>
+
+    <section id="terms" class="section">
+      <div class="section-inner narrow">
+        <h2 class="section-title">Terms &amp; Conditions</h2>
+        <p>Effective date: <strong>2025-01-01</strong></p>
+        <p>
+          By using BetterThoughts, you agree to these terms. BetterThoughts is provided for informational and
+          well-being support purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
+        </p>
+        <ul>
+          <li><strong>License</strong>: You are granted a personal, non-transferable, non-exclusive license to use the app.</li>
+          <li><strong>Content</strong>: All app content is provided “as is.” We reserve the right to modify content or features at any time.</li>
+          <li><strong>Limitation of liability</strong>: To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential damages arising from your use of the app.</li>
+          <li><strong>Updates</strong>: We may update these terms periodically. Continued use of the app constitutes acceptance of updated terms.</li>
+          <li><strong>Contact</strong>: For questions about these terms, email <a href="mailto:contact@betterthoughts.app">contact@betterthoughts.app</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="section-inner narrow">
+        <h2 class="section-title">Contact</h2>
+        <p>We’d love to hear from you. Reach out at <a href="mailto:contact@betterthoughts.app">contact@betterthoughts.app</a>.</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span id="year"></span> BetterThoughts</p>
+        <nav class="footer-nav">
+          <a href="#privacy">Privacy</a>
+          <span aria-hidden="true">·</span>
+          <a href="#terms">Terms</a>
+          <span aria-hidden="true">·</span>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+        anchor.addEventListener('click', function (e) {
+          const targetId = this.getAttribute('href').slice(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+    </script>
+  </body>
+  </html>
+
+
