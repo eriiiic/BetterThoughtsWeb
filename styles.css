@@ -32,7 +32,11 @@ body {
   display: flex; align-items: center; justify-content: space-between;
 }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 700; letter-spacing: 0.2px; }
-.brand img { filter: drop-shadow(0 2px 6px var(--shadow)); }
+.brand img { 
+  filter: drop-shadow(0 2px 6px var(--shadow));
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 .nav-links { display: flex; gap: 18px; align-items: center; }
 .nav a { color: var(--muted); text-decoration: none; transition: color .2s ease; }
 .nav a:hover { color: var(--text); }
@@ -52,7 +56,14 @@ body {
 .hero-bg::after  { background: radial-gradient(circle at 70% 70%, #6ac8ff, transparent 60%); right: -140px; bottom: -160px; animation-delay: -5s; }
 
 .hero-inner { max-width: 1000px; text-align: center; }
-.hero-logo { width: 90px; height: 90px; margin-bottom: 18px; }
+.hero-logo { 
+  width: 90px; 
+  height: 90px; 
+  margin-bottom: 18px; 
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
 .kicker { color: var(--muted); letter-spacing: .18em; text-transform: uppercase; font-size: 12px; margin: 0 0 8px; }
 .display { font-size: clamp(40px, 8vw, 84px); line-height: 1.05; margin: 6px 0 10px; font-weight: 800; }
 .gradient-text { background: linear-gradient(120deg, #eaf6ff, #9be7ff 30%, #3dd6c4 70%); -webkit-background-clip: text; background-clip: text; color: transparent; }
