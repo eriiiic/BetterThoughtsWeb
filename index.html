@@ -92,22 +92,71 @@
         <h2 class="section-title mega">See it in action</h2>
         <div class="screenshot-grid">
           <figure class="screenshot">
-            <img src="assets/screen-categories.jpg" alt="Filter quotes by category" />
+            <img loading="lazy" src="assets/screen-categories.jpg" alt="Filter quotes by category" />
             <figcaption class="caption">Filter quotes by category</figcaption>
           </figure>
           <figure class="screenshot">
-            <img src="assets/screen-bookmarks.jpg" alt="Bookmarks list" />
+            <img loading="lazy" src="assets/screen-bookmarks.jpg" alt="Bookmarks list" />
             <figcaption class="caption">Save your favorites</figcaption>
           </figure>
           <figure class="screenshot">
-            <img src="assets/screen-cards.jpg" alt="Card-based insights" />
+            <img loading="lazy" src="assets/screen-cards.jpg" alt="Card-based insights" />
             <figcaption class="caption">Swipe to find insight</figcaption>
           </figure>
           <figure class="screenshot">
-            <img src="assets/screen-hero.jpg" alt="Reframe your thoughts hero" />
+            <img loading="lazy" src="assets/screen-hero.jpg" alt="Reframe your thoughts hero" />
             <figcaption class="caption">Reframe your thoughts</figcaption>
           </figure>
         </div>
+      </div>
+    </section>
+
+    <section id="download" class="download section">
+      <div class="section-inner narrow" style="text-align:center;">
+        <h2 class="section-title mega">Download</h2>
+        <p class="subtitle">Get BetterThoughts the moment it’s available.</p>
+        <div class="store-badges">
+          <a class="badge" href="#" aria-label="Download on the App Store"><span></span><small>Coming Soon</small> App Store</a>
+          <a class="badge secondary" href="#" aria-label="Join TestFlight">Join TestFlight</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="social-proof" class="testimonials section alt">
+      <div class="section-inner">
+        <h2 class="section-title mega">Loved by mindful doers</h2>
+        <div class="testimonial-grid">
+          <div class="testimonial">
+            <p>“Beautifully designed and genuinely helpful. The quotes feel curated—like a friend nudging you in the right direction.”</p>
+            <div class="author">— Beta User</div>
+          </div>
+          <div class="testimonial">
+            <p>“I open it when I’m stuck. One or two cards usually shift my mindset just enough to keep going.”</p>
+            <div class="author">— Early Adopter</div>
+          </div>
+          <div class="testimonial">
+            <p>“Offline, fast, and private. Exactly what I wanted.”</p>
+            <div class="author">— iOS Enthusiast</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section">
+      <div class="section-inner narrow">
+        <h2 class="section-title mega">FAQ</h2>
+        <details>
+          <summary>Does it work offline?</summary>
+          <p>Yes. All content is stored on-device. No account required.</p>
+        </details>
+        <details>
+          <summary>Is my data private?</summary>
+          <p>We don’t collect personal information. See our <a href="privacy.html">Privacy Policy</a>.</p>
+        </details>
+        <details>
+          <summary>When is the launch?</summary>
+          <p>We’re preparing the final polish. Join TestFlight to get early access.</p>
+        </details>
       </div>
     </section>
 
@@ -133,6 +182,16 @@
       </div>
     </footer>
 
+    <div class="sticky-cta" role="region" aria-label="Sticky download">
+      <div class="sticky-cta-inner">
+        <div class="title">Reframe your thoughts</div>
+        <div class="actions">
+          <a class="badge" href="#download">Get the App</a>
+          <a class="badge secondary" href="#screenshots">See Screenshots</a>
+        </div>
+      </div>
+    </div>
+
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
       document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
@@ -145,6 +204,17 @@
           }
         });
       });
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "BetterThoughts",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "iOS",
+      "description": "Reframe thoughts with curated quotes, filters, bookmarks, offline support, and a widget.",
+      "inLanguage": "en"
+    }
     </script>
   </body>
   </html>
