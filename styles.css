@@ -150,6 +150,54 @@ body {
 .footer-nav a { color: var(--muted); text-decoration: none; }
 .footer-nav a:hover { color: var(--text); }
 
+/* Blog index enhancements */
+.blog-hero {
+  padding: 56px 20px 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.blog-hero .title {
+  font-size: clamp(28px, 5vw, 56px);
+  font-weight: 900;
+  margin: 0 0 8px;
+}
+.blog-controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 12px; }
+.search-input {
+  flex: 1 1 260px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+}
+.chip {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(255,255,255,0.05);
+  color: var(--muted);
+  cursor: pointer;
+}
+.chip.active { color: #06202a; background: linear-gradient(120deg, var(--primary), var(--accent)); border: none; font-weight: 700; }
+
+.blog-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+.blog-card {
+  position: relative;
+  overflow: hidden;
+}
+.blog-card .tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 10px; }
+.blog-card .tag { font-size: 12px; padding: 4px 8px; border-radius: 999px; background: rgba(255,255,255,0.08); color: var(--muted); border: 1px solid rgba(255,255,255,0.12); }
+.read-more { display: inline-block; margin-top: 10px; font-weight: 700; color: var(--primary); text-decoration: none; }
+.read-more:hover { opacity: .9; }
+
+/* Long-form typography */
+.post-content {
+  font-size: 18px; line-height: 1.75;
+}
+.post-content h2 { font-size: 26px; margin-top: 28px; }
+.post-content h3 { font-size: 20px; margin-top: 22px; }
+.post-content img { max-width: 100%; border-radius: 12px; }
+
 /* Download CTA */
 .download { padding: 48px 20px 56px; }
 .store-badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 12px; }

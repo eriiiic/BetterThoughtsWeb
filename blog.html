@@ -55,100 +55,145 @@
       </div>
     </header>
 
-    <main class="section">
-      <div class="section-inner narrow">
-        <h1 class="section-title mega">Blog</h1>
-        <p class="subtitle">Learn about positive thoughts reframing and CBT techniques to improve your mindset and mental well-being.</p>
+    <main>
+      <section class="blog-hero">
+        <div class="section-inner narrow">
+          <h1 class="title">BetterThoughts Blog</h1>
+          <p class="subtitle">Deep dives on reframing, CBT techniques, and compassionate productivity.</p>
+          <div class="blog-controls">
+            <input id="search" class="search-input" type="search" placeholder="Search posts…" aria-label="Search posts" />
+            <button class="chip active" data-tag="all">All</button>
+            <button class="chip" data-tag="cbt">CBT</button>
+            <button class="chip" data-tag="anxiety">Anxiety</button>
+            <button class="chip" data-tag="sleep">Sleep</button>
+            <button class="chip" data-tag="productivity">Productivity</button>
+            <button class="chip" data-tag="mindfulness">Mindfulness</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-inner narrow">
         
-        <div class="blog-grid">
-          <article class="blog-card">
+        <div id="grid" class="blog-grid">
+          <article class="blog-card" data-tags="cbt anxiety">
             <h3><a href="blog/cbt-anxiety-breathing-and-exposure.html">CBT for Anxiety: Breathing, Exposure, and Tolerance</a></h3>
             <p class="excerpt">Use CBT skills to calm the body, face fears gradually, and build anxiety tolerance.</p>
+            <div class="tags"><span class="tag">CBT</span><span class="tag">Anxiety</span></div>
             <div class="meta">January 19, 2025 · 5 min read</div>
+            <a class="read-more" href="blog/cbt-anxiety-breathing-and-exposure.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="cbt sleep">
             <h3><a href="blog/cbt-for-insomnia-sleep-better.html">CBT for Insomnia: Practical Ways to Sleep Better</a></h3>
             <p class="excerpt">CBT‑I strategies to fall asleep faster, reduce nighttime worry, and improve sleep quality.</p>
+            <div class="tags"><span class="tag">CBT</span><span class="tag">Sleep</span></div>
             <div class="meta">January 18, 2025 · 6 min read</div>
+            <a class="read-more" href="blog/cbt-for-insomnia-sleep-better.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="reframing gratitude">
             <h3><a href="blog/gratitude-reframing-technique.html">Gratitude Reframing: A Simple Shift with Big Effects</a></h3>
             <p class="excerpt">Shift attention from threats to resources to increase resilience and mood.</p>
+            <div class="tags"><span class="tag">Reframing</span><span class="tag">Mindset</span></div>
             <div class="meta">January 20, 2025 · 4 min read</div>
+            <a class="read-more" href="blog/gratitude-reframing-technique.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="cbt guide">
             <h3><a href="blog/cognitive-distortions-cheatsheet.html">Cognitive Distortions: A Quick Cheatsheet</a></h3>
             <p class="excerpt">A concise guide to common thinking traps and balanced alternatives.</p>
+            <div class="tags"><span class="tag">CBT</span><span class="tag">Guide</span></div>
             <div class="meta">January 21, 2025 · 5 min read</div>
+            <a class="read-more" href="blog/cognitive-distortions-cheatsheet.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="routine productivity">
             <h3><a href="blog/morning-mindset-routine-cbt.html">A 10‑Minute Morning Mindset Routine (CBT Edition)</a></h3>
             <p class="excerpt">Prime focus, calm, and motivation with a short routine.</p>
+            <div class="tags"><span class="tag">Routine</span><span class="tag">Productivity</span></div>
             <div class="meta">January 22, 2025 · 4 min read</div>
+            <a class="read-more" href="blog/morning-mindset-routine-cbt.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="reframing prompts">
             <h3><a href="blog/journaling-prompts-reframing.html">12 Journaling Prompts for Thought Reframing</a></h3>
             <p class="excerpt">Prompts to identify patterns, challenge beliefs, and find balance.</p>
+            <div class="tags"><span class="tag">Reframing</span><span class="tag">Prompts</span></div>
             <div class="meta">January 23, 2025 · 5 min read</div>
+            <a class="read-more" href="blog/journaling-prompts-reframing.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="cbt productivity">
             <h3><a href="blog/cbt-for-procrastination-behavioral-activation.html">CBT for Procrastination: Behavioral Activation That Works</a></h3>
             <p class="excerpt">Beat inertia with tiny, timed actions and supportive self‑talk.</p>
+            <div class="tags"><span class="tag">CBT</span><span class="tag">Productivity</span></div>
             <div class="meta">January 24, 2025 · 5 min read</div>
+            <a class="read-more" href="blog/cbt-for-procrastination-behavioral-activation.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="mindset cbt">
             <h3><a href="blog/growth-mindset-vs-fixed-mindset-cbt.html">Growth Mindset vs. Fixed Mindset: A CBT View</a></h3>
             <p class="excerpt">Shift beliefs about ability from fixed to flexible using evidence and experiments.</p>
+            <div class="tags"><span class="tag">Mindset</span><span class="tag">CBT</span></div>
             <div class="meta">January 25, 2025 · 4 min read</div>
+            <a class="read-more" href="blog/growth-mindset-vs-fixed-mindset-cbt.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="scripts stress">
             <h3><a href="blog/self-talk-scripts-for-stress.html">Self‑Talk Scripts for Stressful Moments</a></h3>
             <p class="excerpt">Copy‑paste compassionate phrases to ground, reframe, and move forward.</p>
+            <div class="tags"><span class="tag">Scripts</span><span class="tag">Stress</span></div>
             <div class="meta">January 26, 2025 · 4 min read</div>
+            <a class="read-more" href="blog/self-talk-scripts-for-stress.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="habit reframing">
             <h3><a href="blog/how-to-build-habit-of-reframing.html">How to Build a Habit of Reframing</a></h3>
             <p class="excerpt">Make reframing automatic with cues, small reps, and quick wins.</p>
+            <div class="tags"><span class="tag">Habit</span><span class="tag">Reframing</span></div>
             <div class="meta">January 27, 2025 · 4 min read</div>
+            <a class="read-more" href="blog/how-to-build-habit-of-reframing.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="values goals">
             <h3><a href="blog/value-based-goals-cbt.html">Value‑Based Goals: Aim Your Effort Where It Matters</a></h3>
             <p class="excerpt">Use values to set goals that feel meaningful and sustainable.</p>
+            <div class="tags"><span class="tag">Values</span><span class="tag">Goals</span></div>
             <div class="meta">January 28, 2025 · 4 min read</div>
+            <a class="read-more" href="blog/value-based-goals-cbt.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="cbt skills">
             <h3><a href="blog/cbt-micro-skills-you-can-practice-anywhere.html">CBT Micro‑Skills You Can Practice Anywhere</a></h3>
             <p class="excerpt">Small skills for big calm: breath, label, reframe, act.</p>
+            <div class="tags"><span class="tag">CBT</span><span class="tag">Skills</span></div>
             <div class="meta">January 29, 2025 · 4 min read</div>
+            <a class="read-more" href="blog/cbt-micro-skills-you-can-practice-anywhere.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="mindfulness cbt">
             <h3><a href="blog/mindfulness-meets-cbt.html">Mindfulness Meets CBT: Better Together</a></h3>
             <p class="excerpt">Pair awareness with reframing to respond instead of react.</p>
+            <div class="tags"><span class="tag">Mindfulness</span><span class="tag">CBT</span></div>
             <div class="meta">January 30, 2025 · 5 min read</div>
+            <a class="read-more" href="blog/mindfulness-meets-cbt.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="productivity compassion">
             <h3><a href="blog/compassionate-productivity.html">Compassionate Productivity: Get Things Done, Stay Kind</a></h3>
             <p class="excerpt">Blend CBT and self‑compassion to work sustainably without burnout.</p>
+            <div class="tags"><span class="tag">Productivity</span><span class="tag">Compassion</span></div>
             <div class="meta">January 31, 2025 · 5 min read</div>
+            <a class="read-more" href="blog/compassionate-productivity.html">Read more →</a>
           </article>
 
-          <article class="blog-card">
+          <article class="blog-card" data-tags="anxiety cbt">
             <h3><a href="blog/anxiety-thought-patterns.html">Breaking Free from Common Anxiety Thought Patterns</a></h3>
             <p class="excerpt">Spot anxious thinking traps and try balanced alternatives.</p>
+            <div class="tags"><span class="tag">Anxiety</span><span class="tag">CBT</span></div>
             <div class="meta">February 1, 2025 · 6 min read</div>
+            <a class="read-more" href="blog/anxiety-thought-patterns.html">Read more →</a>
           </article>
 
           <article class="blog-card">
@@ -175,7 +220,7 @@
             <div class="meta">January 8, 2025 · 5 min read</div>
           </article>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="site-footer">
@@ -193,6 +238,22 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
+      const search = document.getElementById('search');
+      const chips = Array.from(document.querySelectorAll('.chip'));
+      const grid = document.getElementById('grid');
+      const cards = Array.from(grid.querySelectorAll('.blog-card'));
+      let activeTag = 'all';
+      function applyFilters(){
+        const q = (search.value || '').toLowerCase();
+        cards.forEach(card => {
+          const matchesTag = activeTag === 'all' || (card.dataset.tags||'').includes(activeTag);
+          const txt = card.textContent.toLowerCase();
+          const matchesSearch = !q || txt.includes(q);
+          card.style.display = (matchesTag && matchesSearch) ? '' : 'none';
+        });
+      }
+      search?.addEventListener('input', applyFilters);
+      chips.forEach(chip => chip.addEventListener('click', () => { chips.forEach(c=>c.classList.remove('active')); chip.classList.add('active'); activeTag = chip.dataset.tag; applyFilters(); }));
     </script>
   </body>
 </html>
