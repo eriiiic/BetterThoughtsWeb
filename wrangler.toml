@@ -1,8 +1,7 @@
-# Cloudflare Pages configuration for building the Next.js app in `web/`
-# This file uses the Pages (beta) syntax expected by Wrangler on Cloudflare Pages.
-
-# Required by Pages: the output directory relative to repo root
 name = "betterthoughtsweb"
-pages_build_output_dir = "web/.vercel/output/static"
+
+# Deploy the simple static site from the repository root
+# (contains `index.html`, `styles.css`, and `assets/`)
+pages_build_output_dir = "."
 
 
