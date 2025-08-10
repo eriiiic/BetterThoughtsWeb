@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy – BetterThoughts</title>
+    <meta name="description" content="Privacy Policy for the BetterThoughts iPhone app." />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .page-header { padding: 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(8,27,40,0.6); backdrop-filter: blur(8px); }
+      .container { max-width: 800px; margin: 0 auto; }
+      .breadcrumbs { color: var(--muted); font-size: 14px; }
+      .breadcrumbs a { color: var(--muted); text-decoration: none; }
+      .breadcrumbs a:hover { color: var(--text); }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="nav" style="padding:0;">
+          <a class="brand" href="./">
+            <picture>
+              <source srcset="assets/logo.png" type="image/png" />
+              <img src="assets/logo.svg" alt="BetterThoughts logo" width="28" height="28" />
+            </picture>
+            <span>BetterThoughts</span>
+          </a>
+          <div class="nav-links">
+            <a href="./#features">Features</a>
+            <a href="privacy.html" class="cta-link">Privacy</a>
+            <a href="terms.html">Terms</a>
+            <a href="./#contact">Contact</a>
+          </div>
+        </nav>
+        <div class="breadcrumbs" aria-label="Breadcrumbs">
+          <a href="./">Home</a> · Privacy Policy
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="section-inner narrow">
+        <h1 class="section-title mega">Privacy Policy</h1>
+        <p>Effective date: <strong>2025-01-01</strong></p>
+        <p>
+          BetterThoughts respects your privacy. We do not require an account and we do not
+          collect personal information. The app stores content and preferences locally on your
+          device using Apple’s Core Data.
+        </p>
+        <ul>
+          <li><strong>Local storage only</strong>: Quotes, categories, bookmarks, and dismissed cards are saved on-device.</li>
+          <li><strong>No login</strong>: The app works entirely without creating an account.</li>
+          <li><strong>Analytics</strong>: We use Firebase Analytics to collect anonymous, aggregated usage metrics (e.g., screen opens, feature usage) to improve the experience. No personally identifiable information is collected.</li>
+          <li><strong>Data sharing</strong>: We do not sell or share personal data.</li>
+          <li><strong>Contact</strong>: Email <a href="mailto:contact@betterthoughts.app">contact@betterthoughts.app</a> for privacy questions or requests.</li>
+        </ul>
+        <p>
+          If you uninstall the app, locally stored data is removed from your device.
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span id="year"></span> BetterThoughts</p>
+        <nav class="footer-nav">
+          <a href="privacy.html">Privacy</a>
+          <span aria-hidden="true">·</span>
+          <a href="terms.html">Terms</a>
+          <span aria-hidden="true">·</span>
+          <a href="./#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
+

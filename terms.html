@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms &amp; Conditions – BetterThoughts</title>
+    <meta name="description" content="Terms and Conditions for the BetterThoughts iPhone app." />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .page-header { padding: 24px 20px; border-bottom: 1px solid rgba(255,255,255,0.06); background: rgba(8,27,40,0.6); backdrop-filter: blur(8px); }
+      .container { max-width: 800px; margin: 0 auto; }
+      .breadcrumbs { color: var(--muted); font-size: 14px; }
+      .breadcrumbs a { color: var(--muted); text-decoration: none; }
+      .breadcrumbs a:hover { color: var(--text); }
+    </style>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="nav" style="padding:0;">
+          <a class="brand" href="./">
+            <picture>
+              <source srcset="assets/logo.png" type="image/png" />
+              <img src="assets/logo.svg" alt="BetterThoughts logo" width="28" height="28" />
+            </picture>
+            <span>BetterThoughts</span>
+          </a>
+          <div class="nav-links">
+            <a href="./#features">Features</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html" class="cta-link">Terms</a>
+            <a href="./#contact">Contact</a>
+          </div>
+        </nav>
+        <div class="breadcrumbs" aria-label="Breadcrumbs">
+          <a href="./">Home</a> · Terms &amp; Conditions
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="section-inner narrow">
+        <h1 class="section-title mega">Terms &amp; Conditions</h1>
+        <p>Effective date: <strong>2025-01-01</strong></p>
+        <p>
+          By using BetterThoughts, you agree to these terms. BetterThoughts is provided for informational and
+          well-being support purposes only and is not a substitute for professional medical advice, diagnosis, or treatment.
+        </p>
+        <ul>
+          <li><strong>License</strong>: You are granted a personal, non-transferable, non-exclusive license to use the app.</li>
+          <li><strong>Content</strong>: All app content is provided “as is.” We reserve the right to modify content or features at any time.</li>
+          <li><strong>Limitation of liability</strong>: To the maximum extent permitted by law, we are not liable for any indirect, incidental, or consequential damages arising from your use of the app.</li>
+          <li><strong>Updates</strong>: We may update these terms periodically. Continued use of the app constitutes acceptance of updated terms.</li>
+          <li><strong>Contact</strong>: For questions about these terms, email <a href="mailto:contact@betterthoughts.app">contact@betterthoughts.app</a>.</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© <span id="year"></span> BetterThoughts</p>
+        <nav class="footer-nav">
+          <a href="privacy.html">Privacy</a>
+          <span aria-hidden="true">·</span>
+          <a href="terms.html">Terms</a>
+          <span aria-hidden="true">·</span>
+          <a href="./#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
+
+
