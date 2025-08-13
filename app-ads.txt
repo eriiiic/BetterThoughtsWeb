@@ -1,0 +1,2 @@
+# exemple de fichier app-ads.txt :
+google.com, pub-3038529665662971, DIRECT, f08c47fec0942fa0
