@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BetterThoughts – Thought Reframing App</title>
-    <meta name="description" content="BetterThoughts is a SwiftUI app that helps you reframe thoughts with curated quotes, category filters, bookmarks, offline support, and a home screen widget." />
+    <title>BetterThoughts – Reframe Your Thoughts, Transform Your Mindset</title>
+    <meta name="description" content="A bold, modern iPhone app that helps you reframe thoughts with curated quotes, category filters, bookmarks, offline support, and a beautiful widget. No login required." />
 
-    <meta property="og:title" content="BetterThoughts – Thought Reframing App" />
-    <meta property="og:description" content="Reframe thoughts with curated quotes. Bookmarks, filters, offline support, and a widget. No login required." />
+    <meta property="og:title" content="BetterThoughts – Reframe Your Thoughts, Transform Your Mindset" />
+    <meta property="og:description" content="A bold, modern iPhone app that helps you reframe thoughts with curated quotes, category filters, bookmarks, offline support, and a beautiful widget. No login required." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://eriiiic.github.io/BetterThoughtsWeb/" />
+    <meta property="og:image" content="assets/betterthoughts.png" />
 
     <link rel="icon" href="assets/betterthoughts.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
@@ -20,186 +21,446 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-GYY4DT0QTE');
     </script>
   </head>
   <body>
+    <!-- Navigation -->
     <header class="site-header">
       <nav class="nav">
         <a class="brand" href="#home">
-          <img src="assets/betterthoughts.png" alt="BetterThoughts logo" width="32" height="32" />
+          <div class="brand-icon">
+            <img src="assets/betterthoughts.png" alt="BetterThoughts logo" width="32" height="32" />
+          </div>
           <span>BetterThoughts</span>
         </a>
         <div class="nav-links">
-          <a href="#features">Features</a>
-          <a href="#screenshots">Screenshots</a>
-          <a href="blog.html">Blog</a>
-          <a href="privacy.html">Privacy</a>
-          <a href="terms.html">Terms</a>
-          <a href="#contact" class="cta-link">Contact</a>
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#screenshots" class="nav-link">Screenshots</a>
+          <a href="blog.html" class="nav-link">Blog</a>
+          <a href="#testimonials" class="nav-link">Reviews</a>
+          <a href="#contact" class="nav-link cta-link">Contact</a>
         </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </header>
 
+    <!-- Hero Section -->
     <main id="home" class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
-      <div class="hero-inner card glass">
-        <img class="hero-logo" src="assets/betterthoughts.png" alt="BetterThoughts app logo" />
-        <h1 class="display-xxl">Reframe Your Thoughts</h1>
-        <div class="hashtags">
-          <span class="tag">#CBT</span>
-          <span class="tag">#Mindset</span>
-          <span class="tag">#Productivity</span>
-          <span class="tag">#SelfWorth</span>
-          <span class="tag">#Calm</span>
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="particles"></div>
+      </div>
+      
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-text">🚀 Coming Soon</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span class="title-line">Reframe Your</span>
+            <span class="title-line highlight">Thoughts</span>
+            <span class="title-line">Transform Your</span>
+            <span class="title-line highlight">Mindset</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            A bold, modern iPhone app that helps you shift perspective with curated quotes, 
+            category filters, bookmarks, offline support, and a beautiful widget. 
+            <strong>No login required.</strong>
+          </p>
+          
+          <div class="hero-tags">
+            <span class="tag">#CBT</span>
+            <span class="tag">#Mindset</span>
+            <span class="tag">#Productivity</span>
+            <span class="tag">#SelfWorth</span>
+            <span class="tag">#Calm</span>
+          </div>
+          
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary btn-large">
+              <span class="btn-icon">📱</span>
+              <span class="btn-text">
+                <span class="btn-label">Get the App</span>
+                <span class="btn-sublabel">Available on App Store</span>
+              </span>
+            </a>
+            <a href="#screenshots" class="btn btn-secondary btn-large">
+              <span class="btn-icon">👀</span>
+              <span class="btn-text">See Screenshots</span>
+            </a>
+          </div>
+          
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Curated Quotes</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Categories</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Offline</span>
+            </div>
+          </div>
         </div>
-        <p class="subtitle lead">A bold, modern iPhone app that helps you shift perspective with curated quotes, category filters, bookmarks, offline support, and a beautiful widget. No login required.</p>
-        <p class="note">Coming soon to the App Store.</p>
+        
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <img src="assets/image1.png" alt="BetterThoughts app screenshot" class="phone-screen" />
+            <div class="phone-frame"></div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <section id="features" class="section">
+    <!-- Features Section -->
+    <section id="features" class="section features-section">
       <div class="section-inner">
-        <h2 class="section-title mega">Key features</h2>
-        <div class="feature-grid">
-          <article class="feature card tilt">
+        <div class="section-header">
+          <h2 class="section-title">Why BetterThoughts?</h2>
+          <p class="section-subtitle">Designed with modern psychology and beautiful UX in mind</p>
+        </div>
+        
+        <div class="features-grid">
+          <article class="feature-card" data-feature="reframing">
+            <div class="feature-icon">💭</div>
             <h3>Thought Reframing</h3>
-            <p>Card-based interface with curated quotes to gently shift perspective.</p>
+            <p>Card-based interface with carefully curated quotes to gently shift your perspective and challenge limiting beliefs.</p>
+            <div class="feature-highlight">Swipe through insights</div>
           </article>
-          <article class="feature card tilt">
-            <h3>Category Filters</h3>
-            <p>Choose categories that matter to you. First launch guides you to set them up.</p>
+          
+          <article class="feature-card" data-feature="categories">
+            <div class="feature-icon">🎯</div>
+            <h3>Smart Categories</h3>
+            <p>Choose categories that matter to you. First launch guides you to set up your personalized experience.</p>
+            <div class="feature-highlight">Personalized content</div>
           </article>
-          <article class="feature card tilt">
-            <h3>Bookmarks</h3>
-            <p>Favorite quotes and quickly revisit them. Manage them from a dedicated view.</p>
+          
+          <article class="feature-card" data-feature="bookmarks">
+            <div class="feature-icon">⭐</div>
+            <h3>Smart Bookmarks</h3>
+            <p>Favorite quotes and quickly revisit them. Manage your collection from a dedicated, beautiful view.</p>
+            <div class="feature-highlight">Save what resonates</div>
           </article>
-          <article class="feature card tilt">
-            <h3>Offline Support</h3>
-            <p>All data is stored locally on your device using Core Data. No account required.</p>
+          
+          <article class="feature-card" data-feature="offline">
+            <div class="feature-icon">🔒</div>
+            <h3>100% Offline</h3>
+            <p>All data is stored locally on your device using Core Data. No account required, no internet needed.</p>
+            <div class="feature-highlight">Always available</div>
           </article>
-          <article class="feature card tilt">
+          
+          <article class="feature-card" data-feature="widget">
+            <div class="feature-icon">📱</div>
             <h3>Home Screen Widget</h3>
-            <p>See rotating quotes on your Home Screen. Supports small and medium sizes.</p>
+            <p>See rotating quotes on your Home Screen. Supports small and medium sizes with beautiful animations.</p>
+            <div class="feature-highlight">Daily inspiration</div>
           </article>
-          <article class="feature card tilt">
+          
+          <article class="feature-card" data-feature="privacy">
+            <div class="feature-icon">🛡️</div>
             <h3>Respectful Analytics</h3>
-            <p>Anonymous usage metrics help improve the app. No personal data is collected.</p>
+            <p>Anonymous usage metrics help improve the app. No personal data is collected or shared.</p>
+            <div class="feature-highlight">Your privacy first</div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="screenshots" class="screenshots section alt">
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="section screenshots-section">
       <div class="section-inner">
-        <h2 class="section-title mega">See it in action</h2>
-        <div class="screenshot-grid">
-          <figure class="screenshot">
-            <img loading="lazy" src="assets/image1.png" alt="Focus on what matters most - filter quotes by category" />
-            <figcaption class="caption">Focus on what matters most</figcaption>
+        <div class="section-header">
+          <h2 class="section-title">See it in action</h2>
+          <p class="section-subtitle">Beautiful, intuitive design that feels natural</p>
+        </div>
+        
+        <div class="screenshots-grid">
+          <figure class="screenshot-card">
+            <div class="screenshot-frame">
+              <img loading="lazy" src="assets/image1.png" alt="Focus on what matters most - filter quotes by category" />
+            </div>
+            <figcaption class="screenshot-caption">
+              <h3>Focus on what matters</h3>
+              <p>Filter quotes by category to find exactly what you need</p>
+            </figcaption>
           </figure>
-          <figure class="screenshot">
-            <img loading="lazy" src="assets/image2.png" alt="Save your favorites - access bookmarked quotes anytime" />
-            <figcaption class="caption">Save your favorites</figcaption>
+          
+          <figure class="screenshot-card">
+            <div class="screenshot-frame">
+              <img loading="lazy" src="assets/image2.png" alt="Save your favorites - access bookmarked quotes anytime" />
+            </div>
+            <figcaption class="screenshot-caption">
+              <h3>Save your favorites</h3>
+              <p>Bookmark quotes and access them anytime, anywhere</p>
+            </figcaption>
           </figure>
-          <figure class="screenshot">
-            <img loading="lazy" src="assets/image3.png" alt="Swipe to find your insight - simple card-based design" />
-            <figcaption class="caption">Swipe to find your insight</figcaption>
+          
+          <figure class="screenshot-card">
+            <div class="screenshot-frame">
+              <img loading="lazy" src="assets/image3.png" alt="Swipe to find your insight - simple card-based design" />
+            </div>
+            <figcaption class="screenshot-caption">
+              <h3>Swipe to discover</h3>
+              <p>Simple card-based design makes exploration effortless</p>
+            </figcaption>
           </figure>
-          <figure class="screenshot">
-            <img loading="lazy" src="assets/image4.png" alt="Reframe your thoughts - discover powerful CBT-inspired quotes" />
-            <figcaption class="caption">Reframe your thoughts</figcaption>
+          
+          <figure class="screenshot-card">
+            <div class="screenshot-frame">
+              <img loading="lazy" src="assets/image4.png" alt="Reframe your thoughts - discover powerful CBT-inspired quotes" />
+            </div>
+            <figcaption class="screenshot-caption">
+              <h3>Reframe your thoughts</h3>
+              <p>Discover powerful CBT-inspired quotes that shift perspective</p>
+            </figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section id="download" class="download section">
-      <div class="section-inner narrow" style="text-align:center;">
-        <h2 class="section-title mega">Download</h2>
-        <p class="subtitle">Get BetterThoughts the moment it’s available.</p>
-        <div class="store-badges">
-          <a class="badge" href="https://apps.apple.com/th/app/betterthoughtscbt/id6749776512" aria-label="Download BetterThoughtsCBT on the App Store"><span> </span><small>Download</small> App Store</a>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="social-proof" class="testimonials section alt">
+    <!-- Download Section -->
+    <section id="download" class="section download-section">
       <div class="section-inner">
-        <h2 class="section-title mega">Loved by mindful doers</h2>
-        <div class="testimonial-grid">
-          <div class="testimonial">
-            <p>“Beautifully designed and genuinely helpful. The quotes feel curated—like a friend nudging you in the right direction.”</p>
-            <div class="author">— Beta User</div>
-          </div>
-          <div class="testimonial">
-            <p>“I open it when I’m stuck. One or two cards usually shift my mindset just enough to keep going.”</p>
-            <div class="author">— Early Adopter</div>
-          </div>
-          <div class="testimonial">
-            <p>“Offline, fast, and private. Exactly what I wanted.”</p>
-            <div class="author">— iOS Enthusiast</div>
+        <div class="download-content">
+          <h2 class="download-title">Ready to transform your mindset?</h2>
+          <p class="download-subtitle">Join thousands of users who are already reframing their thoughts with BetterThoughts</p>
+          
+          <div class="download-actions">
+            <a class="store-badge" href="https://apps.apple.com/th/app/betterthoughtscbt/id6749776512" aria-label="Download BetterThoughtsCBT on the App Store">
+              <div class="badge-content">
+                <span class="badge-icon">🍎</span>
+                <div class="badge-text">
+                  <span class="badge-label">Download on the</span>
+                  <span class="badge-store">App Store</span>
+                </div>
+              </div>
+            </a>
+            
+            <div class="download-info">
+              <div class="info-item">
+                <span class="info-icon">⚡</span>
+                <span class="info-text">Free to download</span>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🔒</span>
+                <span class="info-text">No login required</span>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📱</span>
+                <span class="info-text">iOS 17+</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="faq" class="faq section">
-      <div class="section-inner narrow">
-        <h2 class="section-title mega">FAQ</h2>
-        <details>
-          <summary>Does it work offline?</summary>
-          <p>Yes. All content is stored on-device. No account required.</p>
-        </details>
-        <details>
-          <summary>Is my data private?</summary>
-          <p>We don’t collect personal information. See our <a href="privacy.html">Privacy Policy</a>.</p>
-        </details>
-        <details>
-          <summary>When is the launch?</summary>
-          <p>We’re preparing the final polish. Join TestFlight to get early access.</p>
-        </details>
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">Loved by mindful doers</h2>
+          <p class="section-subtitle">Real feedback from our beta users</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Beautifully designed and genuinely helpful. The quotes feel curated—like a friend nudging you in the right direction."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">👤</div>
+              <div class="author-info">
+                <div class="author-name">Beta User</div>
+                <div class="author-title">Early Adopter</div>
+              </div>
+              <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"I open it when I'm stuck. One or two cards usually shift my mindset just enough to keep going."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">👤</div>
+              <div class="author-info">
+                <div class="author-name">Early Adopter</div>
+                <div class="author-title">Productivity Enthusiast</div>
+              </div>
+              <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+          
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>"Offline, fast, and private. Exactly what I wanted in a mental health app."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">👤</div>
+              <div class="author-info">
+                <div class="author-name">iOS Enthusiast</div>
+                <div class="author-title">Privacy Advocate</div>
+              </div>
+              <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Privacy Policy and Terms are now separate pages: privacy.html and terms.html -->
-
-    <section id="contact" class="section alt">
-      <div class="section-inner narrow">
-        <h2 class="section-title">Contact</h2>
-        <p>We’d love to hear from you. Reach out at <a href="mailto:contact@betterthoughts.app">contact@betterthoughts.app</a>.</p>
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq-section">
+      <div class="section-inner">
+        <div class="section-header">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about BetterThoughts</p>
+        </div>
+        
+        <div class="faq-grid">
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Does it work offline?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Yes! All content is stored locally on your device. No internet connection required to use the app.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Is my data private?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Absolutely. We don't collect personal information. All your data stays on your device. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>When is the launch?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>We're putting the final polish on the app. Join our beta program to get early access and help shape the future of BetterThoughts.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>What devices are supported?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>BetterThoughts requires iOS 17 or later and is optimized for iPhone. iPad support is coming soon!</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>How much does it cost?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>The app is free to download with all core features included. Premium features may be added in the future.</p>
+            </div>
+          </details>
+          
+          <details class="faq-item">
+            <summary class="faq-question">
+              <span>Can I export my bookmarks?</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>Currently, bookmarks are stored locally. We're working on export features for future updates.</p>
+            </div>
+          </details>
+        </div>
       </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-inner">
+        <div class="contact-content">
+          <h2 class="contact-title">Get in touch</h2>
+          <p class="contact-subtitle">We'd love to hear from you. Questions, feedback, or just want to say hello?</p>
+          
+          <div class="contact-actions">
+            <a href="mailto:contact@betterthoughts.app" class="contact-link">
+              <span class="contact-icon">✉️</span>
+              <span class="contact-text">contact@betterthoughts.app</span>
+            </a>
+            
+            <div class="contact-info">
+              <div class="info-item">
+                <span class="info-icon">💬</span>
+                <span class="info-text">We respond within 24 hours</span>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🔒</span>
+                <span class="info-text">Your privacy is protected</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="site-footer">
       <div class="footer-inner">
-        <p>© <span id="year"></span> BetterThoughts</p>
+        <div class="footer-brand">
+          <img src="assets/betterthoughts.png" alt="BetterThoughts logo" width="24" height="24" />
+          <span>BetterThoughts</span>
+        </div>
+        
         <nav class="footer-nav">
           <a href="blog.html">Blog</a>
-          <span aria-hidden="true">·</span>
           <a href="privacy.html">Privacy</a>
-          <span aria-hidden="true">·</span>
           <a href="terms.html">Terms</a>
-          <span aria-hidden="true">·</span>
           <a href="#contact">Contact</a>
         </nav>
+        
+        <div class="footer-copyright">
+          <p>© <span id="year"></span> BetterThoughts. All rights reserved.</p>
+        </div>
       </div>
     </footer>
 
-    <div class="sticky-cta" role="region" aria-label="Sticky download">
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" role="region" aria-label="Download BetterThoughts">
       <div class="sticky-cta-inner">
-        <div class="title">Reframe your thoughts</div>
-        <div class="actions">
-          <a class="badge" href="#download">Get the App</a>
-          <a class="badge secondary" href="#screenshots">See Screenshots</a>
+        <div class="cta-content">
+          <div class="cta-title">Ready to reframe your thoughts?</div>
+          <div class="cta-subtitle">Download BetterThoughts today</div>
+        </div>
+        <div class="cta-actions">
+          <a href="#download" class="btn btn-primary">Get the App</a>
+          <a href="#screenshots" class="btn btn-secondary">See Screenshots</a>
         </div>
       </div>
     </div>
 
     <script>
+      // Update year
       document.getElementById('year').textContent = new Date().getFullYear();
+      
+      // Smooth scrolling for anchor links
       document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
           const targetId = this.getAttribute('href').slice(1);
@@ -210,7 +471,64 @@
           }
         });
       });
+      
+      // Mobile menu toggle
+      const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      
+      mobileMenuToggle?.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        this.classList.toggle('active');
+      });
+      
+      // Intersection Observer for animations
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+          }
+        });
+      }, observerOptions);
+      
+      // Observe elements for animation
+      document.querySelectorAll('.feature-card, .screenshot-card, .testimonial-card, .faq-item').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // FAQ accordion behavior
+      document.querySelectorAll('.faq-item').forEach(item => {
+        const summary = item.querySelector('summary');
+        const icon = item.querySelector('.faq-icon');
+        
+        summary.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isOpen = item.hasAttribute('open');
+          
+          // Close all other items
+          document.querySelectorAll('.faq-item[open]').forEach(openItem => {
+            if (openItem !== item) {
+              openItem.removeAttribute('open');
+              openItem.querySelector('.faq-icon').textContent = '+';
+            }
+          });
+          
+          // Toggle current item
+          if (isOpen) {
+            item.removeAttribute('open');
+            icon.textContent = '+';
+          } else {
+            item.setAttribute('open', '');
+            icon.textContent = '−';
+          }
+        });
+      });
     </script>
+    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -218,11 +536,16 @@
       "name": "BetterThoughts",
       "applicationCategory": "LifestyleApplication",
       "operatingSystem": "iOS",
-      "description": "Reframe thoughts with curated quotes, filters, bookmarks, offline support, and a widget.",
-      "inLanguage": "en"
+      "description": "A bold, modern iPhone app that helps you reframe thoughts with curated quotes, category filters, bookmarks, offline support, and a beautiful widget.",
+      "inLanguage": "en",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
     }
     </script>
   </body>
-  </html>
+</html>
 
 

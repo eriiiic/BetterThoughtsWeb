@@ -195,11 +195,37 @@ This repository contains both a lightweight static site and a Next.js app for th
 ### Static site files
 ```
 BetterThoughtsWeb/
-  index.html           # One-page site: hero, features, privacy, terms, contact
-  styles.css           # Modern, glassy style with gradients & subtle animation
+  index.html           # Bold, modern single-page site with enhanced UX
+  styles.css           # Complete redesign with modern design system
   assets/
-    logo.svg           # App logo placeholder; replace with your final asset if needed
+    betterthoughts.png # App logo and screenshots
+  blog.html           # Blog index with search and filtering
+  privacy.html        # Privacy policy page
+  terms.html          # Terms and conditions page
+  blog/               # Individual blog post pages
 ```
+
+### Design Improvements (2025)
+The website has been completely redesigned following modern single-page website best practices:
+
+#### Visual Design
+- **Bold, Modern Aesthetic**: Dark theme with vibrant gradients and glassmorphism effects
+- **Enhanced Typography**: Improved hierarchy with gradient text effects and better spacing
+- **Interactive Elements**: Hover effects, micro-animations, and smooth transitions
+- **Mobile-First**: Responsive design optimized for all screen sizes
+
+#### User Experience
+- **Improved Navigation**: Fixed header with smooth scrolling and mobile menu
+- **Enhanced Hero Section**: Split layout with visual elements and compelling CTAs
+- **Better Content Organization**: Clear sections with improved visual hierarchy
+- **Interactive Features**: FAQ accordion, animated elements, and hover states
+- **Social Proof**: Enhanced testimonials with ratings and author information
+
+#### Technical Improvements
+- **Modern CSS**: CSS custom properties, flexbox, and grid layouts
+- **Performance**: Optimized animations and reduced layout shifts
+- **Accessibility**: ARIA labels, focus states, and reduced motion support
+- **SEO**: Enhanced meta tags and structured data
 
 ### Next.js app (App Router + Tailwind)
 ```
