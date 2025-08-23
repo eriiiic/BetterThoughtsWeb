@@ -3,8 +3,33 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog – BetterThoughts</title>
-    <meta name="description" content="Learn about positive thoughts reframing and CBT techniques to improve your mindset and mental well-being." />
+    
+    <!-- Primary Meta Tags -->
+    <title>BetterThoughts Blog – CBT Techniques, Thought Reframing & Mental Health Tips</title>
+    <meta name="title" content="BetterThoughts Blog – CBT Techniques, Thought Reframing & Mental Health Tips" />
+    <meta name="description" content="Discover practical CBT techniques, thought reframing strategies, and mental health tips. Learn how to transform your mindset with evidence-based cognitive behavioral therapy methods." />
+    <meta name="keywords" content="CBT techniques, thought reframing, mental health tips, cognitive behavioral therapy, anxiety relief, stress management, mindfulness, self-improvement, mental wellness" />
+    <meta name="author" content="BetterThoughts" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://eriiiic.github.io/BetterThoughtsWeb/blog.html" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eriiiic.github.io/BetterThoughtsWeb/blog.html" />
+    <meta property="og:title" content="BetterThoughts Blog – CBT Techniques, Thought Reframing & Mental Health Tips" />
+    <meta property="og:description" content="Discover practical CBT techniques, thought reframing strategies, and mental health tips. Learn how to transform your mindset with evidence-based cognitive behavioral therapy methods." />
+    <meta property="og:image" content="https://eriiiic.github.io/BetterThoughtsWeb/assets/betterthoughts.png" />
+    <meta property="og:site_name" content="BetterThoughts" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://eriiiic.github.io/BetterThoughtsWeb/blog.html" />
+    <meta property="twitter:title" content="BetterThoughts Blog – CBT Techniques, Thought Reframing & Mental Health Tips" />
+    <meta property="twitter:description" content="Discover practical CBT techniques, thought reframing strategies, and mental health tips." />
+    <meta property="twitter:image" content="https://eriiiic.github.io/BetterThoughtsWeb/assets/betterthoughts.png" />
     <link rel="icon" href="assets/betterthoughts.png" type="image/png" />
     <link rel="stylesheet" href="styles.css" />
     
@@ -254,6 +279,83 @@
       }
       search?.addEventListener('input', applyFilters);
       chips.forEach(chip => chip.addEventListener('click', () => { chips.forEach(c=>c.classList.remove('active')); chip.classList.add('active'); activeTag = chip.dataset.tag; applyFilters(); }));
+    </script>
+    
+    <!-- Blog Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Blog",
+          "@id": "https://eriiiic.github.io/BetterThoughtsWeb/blog.html#blog",
+          "name": "BetterThoughts Blog",
+          "description": "Discover practical CBT techniques, thought reframing strategies, and mental health tips. Learn how to transform your mindset with evidence-based cognitive behavioral therapy methods.",
+          "url": "https://eriiiic.github.io/BetterThoughtsWeb/blog.html",
+          "publisher": {
+            "@type": "Organization",
+            "name": "BetterThoughts",
+            "url": "https://eriiiic.github.io/BetterThoughtsWeb/"
+          },
+          "blogPost": [
+            {
+              "@type": "BlogPosting",
+              "headline": "CBT for Anxiety: Breathing, Exposure, and Tolerance",
+              "description": "Use CBT skills to calm the body, face fears gradually, and build anxiety tolerance.",
+              "url": "https://eriiiic.github.io/BetterThoughtsWeb/blog/cbt-anxiety-breathing-and-exposure.html",
+              "datePublished": "2025-01-19",
+              "dateModified": "2025-01-19",
+              "author": {
+                "@type": "Organization",
+                "name": "BetterThoughts"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "BetterThoughts"
+              },
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://eriiiic.github.io/BetterThoughtsWeb/blog/cbt-anxiety-breathing-and-exposure.html"
+              }
+            },
+            {
+              "@type": "BlogPosting",
+              "headline": "CBT for Insomnia: Practical Ways to Sleep Better",
+              "description": "CBT‑I strategies to fall asleep faster, reduce nighttime worry, and improve sleep quality.",
+              "url": "https://eriiiic.github.io/BetterThoughtsWeb/blog/cbt-for-insomnia-sleep-better.html",
+              "datePublished": "2025-01-18",
+              "dateModified": "2025-01-18",
+              "author": {
+                "@type": "Organization",
+                "name": "BetterThoughts"
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "BetterThoughts"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://eriiiic.github.io/BetterThoughtsWeb/blog.html#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://eriiiic.github.io/BetterThoughtsWeb/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://eriiiic.github.io/BetterThoughtsWeb/blog.html"
+            }
+          ]
+        }
+      ]
+    }
     </script>
   </body>
 </html>
