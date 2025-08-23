@@ -40,7 +40,7 @@ export default function Home() {
             {/* Hero Content */}
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center bg-white/5 border border-white/10 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
-                <span className="text-sm font-semibold text-teal-400">🚀 Coming Soon</span>
+                <span className="text-sm font-semibold text-teal-400">✨ Available Now</span>
               </div>
               
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-6">
@@ -59,9 +59,8 @@ export default function Home() {
               </h1>
               
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0">
-                A bold, modern iPhone app that helps you shift perspective with curated quotes, 
-                category filters, bookmarks, offline support, and a beautiful widget. 
-                <strong className="text-white"> No login required.</strong>
+                Swipe through curated thought reframing quotes. Boost your mindset, bookmark your favorites, and find clarity: anytime, offline, with no login required. 
+                <strong className="text-white"> Free download available now.</strong>
               </p>
               
               <div className="flex flex-wrap gap-3 justify-center lg:justify-start mb-8">
@@ -73,11 +72,11 @@ export default function Home() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-12">
-                <a href="#download" className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-400 to-blue-500 text-black font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1">
+                <a href="https://apps.apple.com/us/app/betterthoughtscbt/id6749776512" target="_blank" rel="noopener" className="inline-flex items-center gap-3 bg-gradient-to-r from-teal-400 to-blue-500 text-black font-bold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1">
                   <span className="text-xl">📱</span>
                   <div className="text-left">
-                    <div className="text-sm opacity-90">Available on</div>
-                    <div>App Store</div>
+                    <div className="text-sm opacity-90">Download Now</div>
+                    <div>Free on App Store</div>
                   </div>
                 </a>
                 <a href="#screenshots" className="inline-flex items-center gap-3 bg-white/5 border border-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-sm hover:bg-white/10 transition-all duration-200 hover:-translate-y-1">
@@ -235,14 +234,14 @@ export default function Home() {
       <section id="download" className="py-24 bg-gray-900/50 text-center">
         <div className="mx-auto max-w-4xl px-4">
           <h2 className="text-4xl md:text-5xl font-black mb-4 bg-gradient-to-r from-white via-teal-200 to-blue-300 bg-clip-text text-transparent">
-            Ready to transform your mindset?
+            Transform your mindset today
           </h2>
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            Join thousands of users who are already reframing their thoughts with BetterThoughts
+            Join users who are already reframing their thoughts with BetterThoughts. Download now and start your journey.
           </p>
           
           <div className="flex flex-col items-center gap-8">
-            <a href="https://apps.apple.com/th/app/betterthoughtscbt/id6749776512" className="inline-flex items-center gap-4 bg-white/10 border border-white/20 rounded-2xl px-8 py-6 backdrop-blur-sm hover:bg-white/15 transition-all duration-200 hover:-translate-y-1">
+            <a href="https://apps.apple.com/us/app/betterthoughtscbt/id6749776512" target="_blank" rel="noopener" className="inline-flex items-center gap-4 bg-white/10 border border-white/20 rounded-2xl px-8 py-6 backdrop-blur-sm hover:bg-white/15 transition-all duration-200 hover:-translate-y-1">
               <span className="text-3xl">🍎</span>
               <div className="text-left">
                 <div className="text-sm text-gray-400">Download on the</div>
@@ -429,10 +428,10 @@ export default function Home() {
             <div className="font-bold text-white">Ready to reframe your thoughts?</div>
             <div className="text-sm text-gray-400">Download BetterThoughts today</div>
           </div>
-          <div className="flex gap-4">
-            <a href="#download" className="bg-gradient-to-r from-teal-400 to-blue-500 text-black font-semibold px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5">
-              Get the App
-            </a>
+                     <div className="flex gap-4">
+             <a href="https://apps.apple.com/us/app/betterthoughtscbt/id6749776512" target="_blank" rel="noopener" className="bg-gradient-to-r from-teal-400 to-blue-500 text-black font-semibold px-6 py-2 rounded-lg hover:shadow-lg transition-all duration-200 hover:-translate-y-0.5">
+               Download Now
+             </a>
             <a href="#screenshots" className="bg-white/10 border border-white/20 text-white font-semibold px-6 py-2 rounded-lg backdrop-blur-sm hover:bg-white/15 transition-all duration-200 hover:-translate-y-0.5">
               See Screenshots
             </a>
