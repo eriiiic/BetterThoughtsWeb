@@ -116,6 +116,13 @@ body {
   overflow-x: hidden;
 }
 
+/* ===== IMAGE CONSTRAINTS ===== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ===== LOADING SCREEN ===== */
 .loading-screen {
   position: fixed;
@@ -156,6 +163,8 @@ body {
 .loading-logo img {
   width: 48px;
   height: 48px;
+  max-width: 48px;
+  max-height: 48px;
   filter: brightness(0) invert(1);
 }
 
@@ -362,6 +371,8 @@ a {
 .brand-icon img {
   width: 28px;
   height: 28px;
+  max-width: 28px;
+  max-height: 28px;
   filter: brightness(0) invert(1);
   transition: var(--transition-normal);
 }
@@ -680,6 +691,8 @@ a {
   position: relative;
   width: 300px;
   height: 600px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .phone-frame {
@@ -972,6 +985,9 @@ a {
 .screenshot-frame {
   position: relative;
   overflow: hidden;
+  aspect-ratio: 9 / 19.5;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .screenshot-frame img {
